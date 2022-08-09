@@ -1,0 +1,6 @@
+@import "../../assets/scss/global.scss";
+
+#login-page {
+  @include white-card;
+  @include position-center;
+}

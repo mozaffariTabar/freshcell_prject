@@ -1,0 +1,68 @@
+@import "../../assets/scss/global.scss";
+
+.input-button {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-bottom: 15px;
+  display: inline-block;
+
+  button {
+    display: inline-block;
+    width: 100%;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: $border-fillet;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: $white;
+    color: $black;
+    text-transform: uppercase;
+    box-shadow: 0 4px 14px 0 transparentize($black, 0.8);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 6px 20px transparentize($black, 0.4);
+      transform: scale(101%, 101%);
+    }
+
+    &:active {
+      transform: scale(99%, 99%);
+      box-shadow: 0 6px 20px transparentize($black, 0.6);
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:disabled {
+      cursor: no-drop;
+      background-color: $gray !important;
+      box-shadow: unset !important;
+      color: transparentize($black, 0.4) !important;
+      transform: unset !important;
+    }
+
+    &.primary {
+      display: inline-block;
+      background-color: $blue;
+      color: white;
+      box-shadow: 0 4px 14px 0 transparentize($blue, 0.4);
+      transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        box-shadow: 0 6px 20px transparentize($blue, 0.4);
+        transform: scale(101%, 101%);
+      }
+
+      &:active {
+        transform: scale(99%, 99%);
+        box-shadow: 0 6px 20px transparentize($blue, 0.6);
+      }
+    }
+  }
+}

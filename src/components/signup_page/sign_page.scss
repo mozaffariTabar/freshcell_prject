@@ -1,0 +1,6 @@
+@import "../../assets/scss/global.scss";
+
+#signup-page {
+  @include white-card;
+  @include position-center;
+}

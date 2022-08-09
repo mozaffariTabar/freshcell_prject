@@ -1,0 +1,22 @@
+.loading {
+  text-align: center;
+  margin: 50px;
+
+  i {
+    font-size: 300%;
+    animation: rotate 1s infinite;
+  }
+
+  div {
+    letter-spacing: 2px;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

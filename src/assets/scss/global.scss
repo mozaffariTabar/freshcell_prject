@@ -1,0 +1,57 @@
+// global colors
+$white: rgb(255, 255, 255);
+$gray: rgb(232, 232, 232);
+$light-gray: rgb(240, 240, 240);
+$black: rgb(80, 80, 80);
+$blue: #0070f3;
+$red: rgb(255, 81, 0);
+
+$border-fillet: 5px;
+$border-rounded: 30px;
+$box-shadow-big: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+$box-shadow-small: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+body {
+  background-color: $light-gray;
+}
+
+@mixin white-card {
+  background-color: $white;
+  border-radius: $border-fillet;
+  padding: 50px;
+  box-shadow: $box-shadow-big;
+  width: 30%;
+  border-top: 3px solid $blue;
+  z-index: 2;
+
+  hr {
+    margin-bottom: 20px;
+    border: 2px dashed $gray;
+    border-width: 2px 0 0 0;
+  }
+
+  a.small {
+    color: $blue;
+    text-transform: capitalize;
+    display: inline-block;
+    font-size: 80%;
+    text-decoration: unset;
+    border-right: 1px solid $gray;
+    padding: 0 10px 0 0;
+
+    &:last-of-type {
+      border-right: 0;
+      padding-left: 10px;
+    }
+  }
+}
+
+@mixin position-center {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}

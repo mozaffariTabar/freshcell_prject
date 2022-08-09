@@ -1,0 +1,37 @@
+@import "../../assets/scss/global.scss";
+
+#user-info-page {
+  @include white-card;
+  @include position-center;
+  width: 40%;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+
+    tr {
+      th {
+        border-bottom: 3px solid $gray;
+        text-transform: capitalize;
+        background-color: unset !important;
+      }
+
+      th,
+      td {
+        padding: 15px 10px;
+        text-align: left;
+        width: 24%;
+
+        &:nth-child(1) {
+          width: 4%;
+          text-align: center;
+        }
+
+        &:nth-child(2) {
+          width: 10%;
+        }
+      }
+    }
+  }
+}

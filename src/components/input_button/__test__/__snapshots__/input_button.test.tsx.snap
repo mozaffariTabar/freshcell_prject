@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should match by last snapshoot 1`] = `
+<a
+  className="input-button"
+  data-testid="input-button"
+  href="/"
+  onClick={[Function]}
+>
+  <button
+    className=""
+  >
+    TEST
+  </button>
+</a>
+`;
