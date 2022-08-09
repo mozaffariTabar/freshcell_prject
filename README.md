@@ -4,7 +4,7 @@ JUST FOR INFORMATION: In this project, I have written more pages that were reque
 
 ## Technologies in use
 - Javascript, TypeScript
-- Scss
+- Sass
 - ReactJs
 - GraphQl
 - Jest
